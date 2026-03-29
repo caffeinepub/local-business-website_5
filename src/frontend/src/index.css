@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.75rem;
+
+    /* Primary blue: #2D6EA6 → oklch ~0.52 0.12 240 */
+    --primary: 0.52 0.12 240;
+    --primary-foreground: 1 0 0;
+
+    /* Deep navy: #0B2A3F → oklch ~0.22 0.06 240 */
+    --navy: 0.22 0.06 240;
+
+    /* Page bg: #F3F5F7 → oklch ~0.965 0.005 240 */
+    --background: 0.965 0.005 240;
+
+    /* Card white: #FFFFFF */
+    --card: 1 0 0;
+    --card-foreground: 0.11 0 0;
+
+    --popover: 1 0 0;
+    --popover-foreground: 0.11 0 0;
+
+    /* Primary text: #111827 → oklch ~0.11 0 0 */
+    --foreground: 0.11 0 0;
+
+    /* Secondary text: #6B7280 → oklch ~0.54 0 0 */
+    --secondary: 0.97 0 0;
+    --secondary-foreground: 0.11 0 0;
+
+    --muted: 0.95 0 0;
+    --muted-foreground: 0.54 0 0;
+
+    --accent: 0.95 0.01 240;
+    --accent-foreground: 0.11 0 0;
+
+    /* Border: #E5E7EB → oklch ~0.91 0 0 */
+    --border: 0.91 0 0;
+    --input: 0.91 0 0;
+    --ring: 0.52 0.12 240;
+
+    /* Star gold: #F5C542 → oklch ~0.82 0.17 85 */
+    --star: 0.82 0.17 85;
+
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+
+    --chart-1: 0.646 0.222 41.116;
+    --chart-2: 0.6 0.118 184.704;
+    --chart-3: 0.398 0.07 227.392;
+    --chart-4: 0.828 0.189 84.429;
+    --chart-5: 0.769 0.188 70.08;
+
+    --sidebar: 0.985 0 0;
+    --sidebar-foreground: 0.145 0 0;
+    --sidebar-primary: 0.205 0 0;
+    --sidebar-primary-foreground: 0.985 0 0;
+    --sidebar-accent: 0.97 0 0;
+    --sidebar-accent-foreground: 0.205 0 0;
+    --sidebar-border: 0.922 0 0;
+    --sidebar-ring: 0.708 0 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+}
